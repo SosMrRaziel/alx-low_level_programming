@@ -14,5 +14,6 @@ int main(void)
 		putchar(C);
 		C = C + 1;
 	}
+	putchar(\n);
 return (0);
 }
