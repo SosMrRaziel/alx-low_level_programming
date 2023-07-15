@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+*main - it print from 0 tp 9 with comma and spaces without the 9
+*
+*
+*Return: Always 0 (Success)
+**/
 
 int main(void)
 {
