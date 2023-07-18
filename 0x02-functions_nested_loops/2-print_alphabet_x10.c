@@ -7,8 +7,8 @@ int l, c;
 	{
 		for(n = 'a'; c <= 'z'; n++)
 		_putchar(c);
+		_putchar('\n');
 	}
-_putchar('\n');
 }
 
 
