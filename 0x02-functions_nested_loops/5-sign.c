@@ -1,6 +1,9 @@
 #include "main.h"
-
-
+/**
+ * print_sign - check if @n greater than or leaser than 0
+ * @n: integer to check
+ * Return: 1 if @n > 0, -1 if @n < 0, 0 if @n = 0
+ */
 
 int print_sign(int n)
 {
@@ -14,7 +17,7 @@ int print_sign(int n)
 	_putchar('-');
 	return (-1);
 	}
-	else 
+	else
 	{
 	_putchar('0');
 	return (0);
