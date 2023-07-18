@@ -1,4 +1,3 @@
-#include <stdio.h> 
 #include "main.h"
 
 
@@ -11,10 +10,4 @@ for (;c <= 'z';)
 	c++;
 	}
 _putchar('\n');
-}
-
-int main()
-{
-print_alphabet();
-return 0;
 }
