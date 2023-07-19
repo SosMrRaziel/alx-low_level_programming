@@ -1,24 +1,20 @@
 #include "main.h"
 
 /**
- * _abs - computes the absolute value of an integer
- * @n: n is an integer
+ * add - adds two integers
+ * @n1: integer 1
+ * @n2: integer 2
  *
- * Return: integer
+ * Description: give two integers, returns sum
+ *
+ * Return: sum
  */
 
-int _abs(int n)
+int add(int n1, int n2)
 {
-	if (n > 0)
-	{
-		return (n);
-	}
-	else if (n < 0)
-	{
-		return (-n);
-	}
-	else
-	{
-		return (n);
-	}
+	int sum;
+
+	sum = n1 + n2;
+
+	return (sum);
 }
