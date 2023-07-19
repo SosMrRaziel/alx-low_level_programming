@@ -1,49 +1,49 @@
-#include"main.h"
+#include "main.h"
 
 /**
-*jack_bauer-printeveryminuteoftheday
-*
-*Decription:printeveryminuteoftheday
-*
-*Return:void
-*/
+ * jack_bauer - prints every minute of the day
+ *
+ * Description: prints every minute of the day
+ *
+ * Return: void
+ */
 
-voidjack_bauer(void)
+void jack_bauer(void)
 {
-int hour_t, hour_o, minute_t, minute_o, hour_max;
+	int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
 
-	hour_max = 58;
-	hour_t = '0';
-	while (hour_t < '3')
+	hours_max = 58;
+	hours_tens = '0';
+	while (hours_tens < '3')
 	{
-	if (hour_t == '2')
-	{
-	hour_max = '4';
-	}
-	hour_o = '0';
-		while (hour_o < hour_max)
+		if (hours_tens == '2')
 		{
-		minute_t = '0';
-		while (minute_t < '6')
-		{
-		minute_o = '0';
-		while (minute_o < 58)
-		{
-		_putchar(hour_t);
-		_putchar(hour_o);
-		_putchar(':');
-		_putchar(minute_t);
-		_putchar(minute_o);
-		_putchar('\n');
-		minute_o++;
+			hours_max = '4';
 		}
-	minute_o = '0';
-	minute_t++;
-	}
-	minute_t = '0';
-	hour_o++;
+		hours_ones = '0';
+		while (hours_ones < hours_max)
+		{
+			minutes_tens = '0';
+			while (minutes_tens < '6')
+			{
+				minutes_ones = '0';
+				while (minutes_ones < 58)
+				{
+					_putchar(hours_tens);
+					_putchar(hours_ones);
+					_putchar(':');
+					_putchar(minutes_tens);
+					_putchar(minutes_ones);
+					_putchar('\n');
+					minutes_ones++;
+				}
+				minutes_ones = '0';
+				minutes_tens++;
+			}
+			minutes_tens = '0';
+			hours_ones++;
 		}
-	hour_o = '0';
-	hour_t++;
+		hours_ones = '0';
+		hours_tens++;
 	}
 }
