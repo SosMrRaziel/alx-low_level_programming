@@ -1,9 +1,16 @@
 #include "main.h"
 /**
- * _islower - checks for lowercase character
- * @c: character to be checked
+ * _isalpha - checks if a character is an alphabetic character
+ * @c: the character to check
  *
- * Return: 1 if c is lowercase, 0 otherwise
+ * Description: This function checks if the input character c is an alphabetic
+ * character (either uppercase or lowercase). If c is an alphabetic character,
+ * the function returns 1, otherwise it returns 0. The function uses the ASCII
+ * values of characters to determine if c is an alphabetic character. The ASCII
+ * values for lowercase characters range from 97 to 122, and the ASCII values
+ * for uppercase characters range from 65 to 90.
+ *
+ * Return: 1 if c is an alphabetic character, 0 otherwise
  */
 
 int _isalpha(int c)
