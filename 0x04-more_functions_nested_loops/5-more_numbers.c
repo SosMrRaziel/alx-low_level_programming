@@ -14,7 +14,7 @@ int i, j;
 			_putchar('1');
 		_putchar(j % 10 + 48);
 		}
-	putchar('\n');
+	_putchar('\n');
 	}
 
 }
