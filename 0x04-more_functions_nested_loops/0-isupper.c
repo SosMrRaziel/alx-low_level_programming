@@ -23,7 +23,7 @@ char ch_isupper;
 		return (0);
 	}
 	}
-return (void);
+return (2);
 
 }
 
