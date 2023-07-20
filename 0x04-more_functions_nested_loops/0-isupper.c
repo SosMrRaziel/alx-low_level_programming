@@ -15,15 +15,9 @@ char ch_isupper;
 	{
 		return (1);
 	}
+	else 
+	return (0);
 	}
-	for (ch_isupper = 'a'; ch_isupper <= 'z'; ch_isupper++)
-	{
-		if (c == ch_isupper)
-	{
-		return (0);
-	}
-	}
-return (2);
 
 }
 
