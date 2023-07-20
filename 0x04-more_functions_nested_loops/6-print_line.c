@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+* print_line - function will print lines
+* @n: number of lines you want to print
+**/
 
 void print_line(int n)
 {
