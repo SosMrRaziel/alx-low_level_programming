@@ -3,7 +3,7 @@
  * print_square - it draw square
  * @size: is the number of times the character # should be printed
  **/
-void print_square(int size);
+void print_square(int size)
 {
 	int i, j;
 
