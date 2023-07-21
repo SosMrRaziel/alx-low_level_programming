@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
  * print_diagonal - it draws a diagonal on the tieminal
  * @n: is the number of times the character \ should be printed
@@ -6,19 +6,16 @@ i#include "main.h"
 void print_triangle(int size)
 
 {
-	int i, j;
-
-	if (size > 0)
+	int i, j, k;
+	
+	for (i = 1; i <= size; i++)
 	{
-	for (i = 0; i < size; i++)
+		for (j = size; j > i; j--)
+			_putchar(' ');
+	}
+	for (k = 1; k <= i; k++)
 	{
-		for (j = 0; j < i; j++)
-		{
-		_putchar('#');
-		}
-	_putchar('\n');
+		putchar('#');
 	}
-	}
-	else
-		_putchar('\n');
+	
 }
