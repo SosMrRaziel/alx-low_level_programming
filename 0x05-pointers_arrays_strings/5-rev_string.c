@@ -6,7 +6,7 @@
 */
 
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int i = 0;
 
@@ -20,4 +20,4 @@ void rev_string(char *s);
 	_putchar(*s);
 	}
 _putchar('\n');
-}i
+}
