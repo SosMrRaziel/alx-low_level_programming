@@ -5,21 +5,16 @@
 * Return: nothing
 */
 
-
-void rev_string(char *s)
-{
-	int i = 0;
-
-	for (; *s != '\0'; s++, i++)
-	{
-	_putchar(*s);
-	}
-	_putchar('\n');
-	for (; i > 0;)
-	{
-	i--;
-	s--;
-	_putchar(*s);
-	}
-_putchar('\n');
+void rev_string(char *s) {
+    char *p = s;
+    while (*p) {
+        p++;
+    }
+    while (--p > s) {
+        char c = *s;
+        *s++ = *p;
+        *p = c;
+    }
 }
+
+
