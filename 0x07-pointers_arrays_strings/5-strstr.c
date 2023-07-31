@@ -6,19 +6,18 @@ char *_strstr(char *haystack, char *needle)
 {
     while (*haystack)
     {
-        char *begin = haystack;
-        char *pattern = needle;
+	char *i = haystack;
+	char *j = needle;
 
-        while (*haystack && *pattern && *haystack == *pattern)
-        {
-            haystack++;
-            pattern++;
-        }
+	while (*haystack && *j && *haystack == *j)
+	{
+		haystack++;
+		pattern++;
+	}
+	if (!*pattern)
+		return (i);
 
-        if (!*pattern)
-            return begin;
-
-        haystack = begin + 1;
-    }
-    return (0);
+	haystack = i + 1;
+	}
+	return (0);
 }
