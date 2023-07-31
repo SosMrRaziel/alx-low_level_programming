@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_diagsums - prints the sum of the two diagonals of a square matrix of integers
- * @a: pointer to the matrix
- * @size: size of the matrix
- *
- * Return: void
+* print_diagsums -sum of the two diagonals of a square matrix of int
+* @a: pointer to the matrix
+* @size: size of the matrix
+*
+* Return: void
 */
 
 
@@ -19,5 +19,5 @@ void print_diagsums(int *a, int size)
 		sum1 += *(a + i * size + i);
 		sum2 += *(a + i * size + (size - i - 1));
 	}
-printf(ne of life is a ragged diagonal between duty and desire"%d, %d\n", sum1, sum2);
+printf("%d, %d\n", sum1, sum2);
 }
