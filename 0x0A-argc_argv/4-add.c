@@ -1,38 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
-/**
- * _isdigit - it checks if the c variable is digite
- * @c: the variable checked if it is digit
- * Return: 1 if c is digit 0 if c is not digit
- */
-
-int _isdigit(int c)
-{
-	while (c >= 48 && c <= 57)
+int main(int argc, char *argv[])
 	{
-	return (1);
-	}
-	return (0);
-}
-int main (int argc, char *argv[])
-{
-	int i , sum = 0;
-	char *p = argv;
+	int sum = 0;
 
-	for ( i = 1; i < argc; i++)
+	for (int i = 1; i < argc; i++)
 	{
-		if (!_isdigit(*p))
+	int j = 0;
+
+	while (argv[i][j])
+	{
+		if (!isdigit(argv[i][j]))
 		{
 		printf("Error\n");
-		return (1);
+		return 1;
 		}
-			else
-			{
-			sum += atoi(*p);
-			printf("%d\n", sum);
-			}
+	j++;
 	}
-return (0);
+	sum += atoi(argv[i]);
+	}
+	printf("%d\n", sum);
+	return 0;
 }
 
