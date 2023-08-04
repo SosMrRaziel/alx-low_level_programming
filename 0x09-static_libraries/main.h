@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 int _isupper(int c);
 char *_memset(char *s, char b, unsigned int n);
 char *_strcat(char *dest, char *src);
@@ -18,3 +21,5 @@ int _abs(int n);
 char *_strcpy(char *dest, char *src);
 int _putchar(char c);
 int _atoi(char *s);
+
+#endif
