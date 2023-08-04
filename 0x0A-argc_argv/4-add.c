@@ -1,27 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-
+#include <string.h>
+/**
+ * main - sum numbers
+ * @argc: number of variables
+ * @argv: string of variables
+ * Return: always 0
+ */
 int main(int argc, char *argv[])
-	{
-	int sum = 0;
+{
+	int i = 1;
+	int a = 0;
 
-	for (int i = 1; i < argc; i++)
+	if (argc == 1)
+		printf("0\n");
+	while (i < argc)
 	{
-	int j = 0;
-
-	while (argv[i][j])
+	/*if (*argv[i] < 48 || *argv[i] > 57)*/
+	if (strspn(argv[i], "0123456789") != strlen(argv[i]))
 	{
-		if (!isdigit(argv[i][j]))
-		{
 		printf("Error\n");
-		return 1;
-		}
-	j++;
+		return (1);
 	}
-	sum += atoi(argv[i]);
+	else
+		a = a + atoi(argv[i]);
+	i++;
 	}
-	printf("%d\n", sum);
-	return 0;
+	if (a != 0)
+		printf("%d\n", a);
+	return (0);
 }
 
