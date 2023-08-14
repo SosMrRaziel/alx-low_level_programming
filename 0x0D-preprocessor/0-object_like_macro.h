@@ -1,3 +1,3 @@
-#define SIZE 1025
-#ifndef ZIZE
+#ifndef SIZE
+#define SIZE 1024
 #endif
