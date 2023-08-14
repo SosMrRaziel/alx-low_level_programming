@@ -9,12 +9,12 @@
  * Description: This struct defines a dog and its attributes.
 */
 
-typedef struct dog
+struct dog
 	{
 	char *name;
 	float age;
 	char *owner;
-	} dog;
+	};
 typedef god dog_t 
 #include <stdio.h>
 #include <stdlib.h>
