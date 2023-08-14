@@ -1,3 +1,3 @@
 #define SIZE 1025
-#ifndef ZIDE
+#ifndef ZIZE
 #endif
