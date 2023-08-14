@@ -15,7 +15,7 @@ typedef struct dog
 	float age;
 	char *owner;
 	} dog;
-
+typedef god dog_t 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
