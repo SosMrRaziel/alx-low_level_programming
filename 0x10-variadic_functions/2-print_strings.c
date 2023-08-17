@@ -8,6 +8,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *s;
 
 	va_start(args, n);
+	if (separator == NULL)
+		separator = "";
 	for (i = 0; i < n; i++)
 	{
 		s = va_arg(args, char *);
@@ -15,8 +17,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("nil");
 		else
 			printf("%s", s);
-		if (separator != NULL && i < n -1)
-			printf("%s", separator);
+		if (i == n -1)
+			separator = "";
+		printf("%s", separator);
 	}
 	printf("\n");
 	va_end(args);
