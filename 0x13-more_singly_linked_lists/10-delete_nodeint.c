@@ -1,5 +1,10 @@
 #include "lists.h"
-
+/**
+ * delete_nodeint_at_index - for being rude
+ * @head: the master of them
+ * @index: the leader
+ * Return: value of delted node
+ */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -27,4 +32,3 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	free(now);
 		return (1);
 }
-		
