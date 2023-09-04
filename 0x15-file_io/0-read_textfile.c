@@ -10,26 +10,26 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t rd;
-	char *buffer;
-	FILE *fp;
+    ssize_t n_read;
+    char *buffer;
+    FILE *fp;
 
-	if (filename == NULL)
-	        return (0);
+    if (filename == NULL)
+        return (0);
 
-	buffer = malloc(sizeof(char) * letters);
-	if (buffer == NULL)
-		return (0);
+    buffer = malloc(sizeof(char) * letters);
+    if (buffer == NULL)
+        return (0);
 
-	fp = fopen(filename, "r");
-	if (fp == NULL)
-		return (0);
+    fp = fopen(filename, "r");
+    if (fp == NULL)
+        return (0);
 
-	rd = fread(buffer, sizeof(char), letters, fp);
-	fwrite(buffer, sizeof(char), rd, stdout);
+    n_read = fread(buffer, sizeof(char), letters, fp);
+    fwrite(buffer, sizeof(char), n_read, stdout);
 
-	fclose(fp);
-	free(buffer);
+    fclose(fp);
+    free(buffer);
 
-		return (rd);
+    return (n_read);
 }
