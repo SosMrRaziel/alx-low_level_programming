@@ -3,24 +3,24 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
+	int f;
 	ssize_t len;
 
 	if (filename == NULL)
 		return (-1);
 
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-	if (fd == -1)
+	f = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	if (f == -1)
 		return (-1);
 	if (text_content != NULL)
 	{
-		len = write(fd, text_content, strlen(text_content));
+		len = write(f, text_content, strlen(text_content));
 		if (len == -1)
 		{
-			close(fd);
+			close(f);
 			return (-1);
 		}
 	}
-	close(fd);
+	close(f);
 	return (1);
 }
