@@ -1,28 +1,29 @@
 #include <stdio.h>
 
-void add(a, b)
+
+int add(int a,int b)
 {
     return (a + b);
 }
 
-void sub(a, b)
+int sub(int a,int b)
 {
     return (a - b);
 }
 
-void mul(a, b)
+int mul(int a,int b)
 {
     return (a * b);
-}
+} 
 
-void div(a, b)
+int div(int a,int b)
 {
     if (b == 0)
         printf("you cant divide by 0\n");
     return(a / b);
 }
 
-void mod(a, b)
+int mod(int a,int b)
 {
     if (b == 0)
         printf("you cant divide by 0\n");
