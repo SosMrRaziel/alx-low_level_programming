@@ -40,6 +40,9 @@ int binary_search(int *array, size_t size, int value)
 		printf("Searching in array:");
 		print_array(array + start, end - start + 1);
 
+		if (array == NULL)
+			return (-1);
+
 		if (array[mid] == value)
 		{
 			return (mid);
